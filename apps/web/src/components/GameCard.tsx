@@ -9,8 +9,17 @@ export function GameCard({ game }: Props) {
   const nav = useNavigate()
   return (
     <div className="glass-card rounded-xl overflow-hidden flex flex-col active:scale-95 transition-transform">
-      <div className="h-32 w-full relative bg-surface-container-highest flex items-center justify-center">
-        <span className="text-4xl">🎮</span>
+      <div className="h-32 w-full relative bg-surface-container-highest flex items-center justify-center overflow-hidden">
+        {game.iconUrl ? (
+          <img
+            src={game.iconUrl}
+            alt={game.name}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        ) : (
+          <span className="text-4xl">🎮</span>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent" />
       </div>
       <div className="p-3 flex flex-col gap-1">

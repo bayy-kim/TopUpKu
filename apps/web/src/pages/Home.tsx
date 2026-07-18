@@ -47,7 +47,18 @@ export default function Home() {
             <h3 className="font-headline-md text-headline-md text-on-surface">Daftar Game</h3>
           </div>
           {isLoading ? (
-            <p className="text-on-surface-variant text-center py-8">Memuat...</p>
+            <div className="grid grid-cols-2 gap-gutter">
+              {[...Array(6)].map((_, i) => (
+                <div key={i} className="rounded-xl overflow-hidden bg-surface-container animate-pulse">
+                  <div className="h-32 bg-surface-container-high" />
+                  <div className="p-3 flex flex-col gap-2">
+                    <div className="h-4 w-3/4 rounded bg-surface-container-high" />
+                    <div className="h-3 w-1/2 rounded bg-surface-container-high" />
+                    <div className="mt-2 h-9 rounded-lg bg-surface-container-high" />
+                  </div>
+                </div>
+              ))}
+            </div>
           ) : (
             <div className="grid grid-cols-2 gap-gutter">
               {filtered?.map((game) => (
