@@ -1,6 +1,7 @@
 {
   "name": "@topupku/api",
   "private": true,
+  "type": "module",
   "prisma": {
     "seed": "tsx prisma/seed.ts"
   },
