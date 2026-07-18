@@ -106,7 +106,7 @@ export default function Checkout() {
           </div>
         </section>
 
-        <section className="p-edge-margin flex flex-col gap-stack-lg">
+        <section className="p-edge-margin flex flex-col gap-stack-lg pb-24">
           <h2 className="font-headline-md text-headline-md text-primary">Payment Method</h2>
 
           {paymentMethods.map((group) => (
