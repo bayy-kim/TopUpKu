@@ -16,7 +16,7 @@ async function main() {
   console.log('Seeded admin:', admin.email)
   const mlbb = await prisma.game.upsert({
     where: { slug: 'mobile-legends' },
-    update: {},
+    update: { iconUrl: '/images/mlbb-cover.jpg' },
     create: {
       name: 'Mobile Legends',
       slug: 'mobile-legends',
@@ -35,7 +35,7 @@ async function main() {
 
   const ff = await prisma.game.upsert({
     where: { slug: 'free-fire' },
-    update: {},
+    update: { iconUrl: '/images/ff-cover.jpg' },
     create: {
       name: 'Free Fire',
       slug: 'free-fire',
@@ -53,7 +53,7 @@ async function main() {
 
   const pubg = await prisma.game.upsert({
     where: { slug: 'pubg-mobile' },
-    update: {},
+    update: { iconUrl: '/images/pubgm-cover.png' },
     create: {
       name: 'PUBG Mobile',
       slug: 'pubg-mobile',
