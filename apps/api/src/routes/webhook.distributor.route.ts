@@ -1,6 +1,6 @@
 import { Router } from 'express'
-import prisma from '../lib/prisma'
-import { verifyDigiflazzCallback } from '../services/digiflazz.service'
+import prisma from '../lib/prisma.js'
+import { verifyDigiflazzCallback } from '../services/digiflazz.service.js'
 
 const router = Router()
 

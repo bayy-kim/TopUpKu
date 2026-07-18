@@ -1,10 +1,10 @@
 import express from 'express'
 import cors from 'cors'
-import gamesRouter from './routes/games.route'
-import ordersRouter from './routes/orders.route'
-import webhookPaymentRouter from './routes/webhook.payment.route'
-import webhookDistributorRouter from './routes/webhook.distributor.route'
-import adminRouter from './routes/admin.route'
+import gamesRouter from './routes/games.route.js'
+import ordersRouter from './routes/orders.route.js'
+import webhookPaymentRouter from './routes/webhook.payment.route.js'
+import webhookDistributorRouter from './routes/webhook.distributor.route.js'
+import adminRouter from './routes/admin.route.js'
 
 const app = express()
 

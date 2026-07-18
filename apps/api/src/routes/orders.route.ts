@@ -1,7 +1,7 @@
 import { Router } from 'express'
 import { z } from 'zod'
-import prisma from '../lib/prisma'
-import { createSnapTransaction } from '../services/midtrans.service'
+import prisma from '../lib/prisma.js'
+import { createSnapTransaction } from '../services/midtrans.service.js'
 
 const router = Router()
 

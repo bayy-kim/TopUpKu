@@ -1,8 +1,8 @@
 import { Router } from 'express'
 import type { Prisma } from '@prisma/client'
-import prisma from '../lib/prisma'
-import { verifyMidtransSignature } from '../services/midtrans.service'
-import { createTopupTransaction } from '../services/digiflazz.service'
+import prisma from '../lib/prisma.js'
+import { verifyMidtransSignature } from '../services/midtrans.service.js'
+import { createTopupTransaction } from '../services/digiflazz.service.js'
 
 const router = Router()
 

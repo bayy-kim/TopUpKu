@@ -4,9 +4,9 @@ import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import { z } from 'zod'
 import type { Prisma } from '@prisma/client'
-import prisma from '../lib/prisma'
-import { adminAuth } from '../middlewares/auth'
-import { createTopupTransaction } from '../services/digiflazz.service'
+import prisma from '../lib/prisma.js'
+import { adminAuth } from '../middlewares/auth.js'
+import { createTopupTransaction } from '../services/digiflazz.service.js'
 
 const router = Router()
 
